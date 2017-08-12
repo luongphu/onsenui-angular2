@@ -6,9 +6,11 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "www",
       "assets": [
         "assets",
+        "res",
+        "img",
         "favicon.ico"
       ],
       "index": "index.html",
