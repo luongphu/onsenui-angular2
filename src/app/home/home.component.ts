@@ -7,13 +7,13 @@ import { AppService } from '../app.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  i: number = 0;
+  i = 0;
 
   constructor(private _service: AppService) { }
 
   ngOnInit() {
   }
-  
+
   inc() {
     this.i++;
   }
@@ -22,6 +22,6 @@ export class HomeComponent implements OnInit {
     console.log(this._service);
     // (3) service を使って (1) の ElementRef にアクセスし、
     //     nativeElement プロパティで DOM 要素を取得し、setActiveTab 関数を叩く
-    this._service.appComponent.tabbarElementRef.nativeElement.setActiveTab(1);
+    this._service.tabsComponent.tabbarElementRef.nativeElement.setActiveTab(1);
   }
 }

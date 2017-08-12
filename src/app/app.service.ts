@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { AppComponent } from './app.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @Injectable()
 export class AppService {
-   appComponent: AppComponent;
+   tabsComponent: TabsComponent;
 }
